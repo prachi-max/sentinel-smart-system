@@ -1,17 +1,17 @@
-# Sentinel Smart System 🚀
+# Sentinel Smart System 
 
 AI-based Predictive Maintenance System using LSTM for Remaining Useful Life (RUL) prediction.
 
-## 🔥 Features
+##  Features
 - LSTM-based time-series prediction
 - Real-time inference using FastAPI
 - Angular dashboard visualization
 - Dynamic engine health monitoring
 
-## 🧠 Tech Stack
+##  Tech Stack
 Python, PyTorch, FastAPI, Angular, Chart.js
 
-## 🚀 How to Run
+##  How to Run
 
 ### Backend
 cd src
@@ -27,5 +27,5 @@ ng serve
 - Engine status (Operational, Warning, Critical)
 - Real-time dashboard
 
-## 👩‍💻 Author
+##  Author
 Prachi Nawale
