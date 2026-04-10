@@ -1,0 +1,17 @@
+# Data Processing & Analysis
+pandas==2.2.1
+numpy==1.26.4
+scikit-learn==1.4.1.post1
+matplotlib==3.8.3
+
+# Deep Learning Framework (PyTorch)
+torch==2.2.1
+torchvision==0.17.1
+torchaudio==2.2.1
+
+# Backend API (for Angular Integration)
+fastapi==0.110.0
+uvicorn==0.27.1
+
+# Experiment Tracking (Optional but Professional)
+mlflow==2.11.1
