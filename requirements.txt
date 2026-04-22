@@ -1,4 +1,6 @@
 # Data Processing & Analysis
+setuptools
+wheel
 pandas==2.2.1
 numpy==1.26.4
 scikit-learn==1.4.1.post1
