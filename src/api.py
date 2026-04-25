@@ -279,7 +279,7 @@ app.add_middleware(
 # ==============================
 # 🔥 LOAD MODEL
 # ==============================
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "sentinel_model.pth")
 
 model = SentinelLSTM(input_size=21, hidden_size=64, num_layers=2)

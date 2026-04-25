@@ -1,8 +1,7 @@
-setuptools
-wheel
-flask
-tensorflow==2.12.0
+fastapi
+uvicorn
+torch
+pandas
+scikit-learn
 numpy
-opencv-python-headless
-pillow
 gunicorn
