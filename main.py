@@ -5,7 +5,7 @@ from fastapi import FastAPI
 
 # Ensure the 'src' directory is in the system path for imports
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
-
+app = FastAPI()
 try:
     from train import train_model
     # Note: We won't call simulate_real_time_inference directly here 
