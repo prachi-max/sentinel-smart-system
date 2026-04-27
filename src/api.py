@@ -260,9 +260,9 @@ import os
 from model import SentinelLSTM
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
-from data_loader import load_and_preprocess_data
+from src.data_loader import load_and_preprocess_data
 from sklearn.preprocessing import MinMaxScaler
-
+from src.model import SentinelLSTM
 app = FastAPI()
 
 # ==============================
@@ -279,7 +279,7 @@ app.add_middleware(
 # ==============================
 # 🔥 LOAD MODEL
 # ==============================
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = os.path.join(BASE_DIR, "sentinel_model.pth")
 
 model = SentinelLSTM(input_size=21, hidden_size=64, num_layers=2)
@@ -294,7 +294,7 @@ except Exception as e:
 # ==============================
 # 🔥 LOAD DATA
 # ==============================
-DATA_PATH = os.path.join(BASE_DIR, "data", "train_FD001.txt")
+DATA_PATH = os.path.join(BASE_DIR, "Data", "train_FD001.txt")
 
 df, sensors = load_and_preprocess_data(DATA_PATH)
 
