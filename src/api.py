@@ -260,10 +260,11 @@ import os
 from model import SentinelLSTM
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
-from src.data_loader import load_and_preprocess_data
+from src.data_loader import  load_and_preprocess_data
 from sklearn.preprocessing import MinMaxScaler
 from src.model import SentinelLSTM
 app = FastAPI()
+
 
 # ==============================
 # 🔥 CORS (Allow Angular)
