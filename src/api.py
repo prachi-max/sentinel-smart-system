@@ -98,7 +98,7 @@ def get_engine_sequence(engine_id: int):
 # 🚀 API ENDPOINT
 # ==============================
 
-@app.get("/api/v1/health-check/{engine_id}")
+@app.get("https://sentinel-smart-system-4.onrender.com/api/v1/health-check/{engine_id}")
 async def get_engine_status(engine_id: int):
     try:
         input_data, current_cycle = get_engine_sequence(engine_id)
@@ -140,3 +140,4 @@ async def get_engine_status(engine_id: int):
             "status": "ERROR",
             "timestamp": str(pd.Timestamp.now())
         }
+    
